@@ -11,7 +11,7 @@ To run the .py files in colab, please follow below steps:
 
 <br>
 2. Change the directory path:
-<br>
+
 ```
 %cd flask-api-text-classification-word2vec-model
 ```
@@ -19,6 +19,7 @@ To run the .py files in colab, please follow below steps:
 <br>
 3. Check current directory path:
 <br>
+
 ```
 !pwd
 ```
@@ -26,6 +27,7 @@ To run the .py files in colab, please follow below steps:
 <br>
 4. Run utilityfunction.py:
 <br>
+
 ```
 !python utilityfunction.py
 ```
@@ -33,12 +35,14 @@ To run the .py files in colab, please follow below steps:
 <br>
 5. Run model_building.py:
 <br>
+
 ```
 !python model_building.py
 ```
 <br>
 6. Run model_testing_api.py:
 <br>
+
 ```
 !python model_testing_api.py
 ```
