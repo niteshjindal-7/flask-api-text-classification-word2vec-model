@@ -54,4 +54,15 @@ embeddingsize = 70
 win_size =  5
 sentences = MySentences(corpus) # a memory-friendly iterator 
 loss_logger = LossLogger(wordembedding_dir, embeddingsize , win_size) #LossLogger Class from custom utility module
-model = Word2Vec(sentences,vector_size=embeddingsize, window=win_size,compute_loss=True,min_count=2, workers=1, epochs=70,callbacks=[loss_logger])   #create model and save log files 
+model = Word2Vec(sentences,vector_size=embeddingsize, window=win_size, compute_loss=True,min_count=2, workers=1, epochs=70,callbacks=[loss_logger])   #create model and save log files 
+
+
+try:
+
+    os.remove('WordEmbeddings.zip')
+    os.remove('Text_Files.zip')
+    shutil.rmtree('WordEmbeddings')
+    shutil.rmtree('Text_Files')
+
+except:
+    print("Files Deleted")
