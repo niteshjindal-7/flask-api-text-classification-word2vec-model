@@ -1,24 +1,13 @@
 # flask-api-text-classification-word2vec-model
 Flask API for text classification using word2vec
 
-<br>
-<br>
-Open model_building.py in Colab:
-<br>
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/niteshjindal170988/flask-api-text-classification-word2vec-model/blob/main/model_building.ipynb)
+To run the .py files in colab, please follow below steps:
+
+
+1. Clone the git repo in colab:
+!git clone https://github.com/niteshjindal170988/flask-api-text-classification-word2vec-model.git
 
 
 
-<br>
-<br>
-Open model_testing_api.py in Colab:
-<br>
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/niteshjindal170988/flask-api-text-classification-word2vec-model/blob/86f2849801c3a9bb975c1f272c6a57305509207d/model_building.py)
-
-
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/niteshjindal170988/supervised-learning/blob/main/classification/decision-tree/decision-tree.ipynb)
-<br>
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/niteshjindal170988/flask-api-text-classification-word2vec-model/)
-
-
+2. !ipython <.py file path> for example, if you wish to open model_building.py, run-
+!ipython model_building.py

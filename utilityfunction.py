@@ -11,7 +11,11 @@ import logging
 import sys
 import requests
 import time
-import swagger_client as cris_client
+try:
+    import swagger_client as cris_client
+except ModuleNotFoundError as e:
+    print(e)
+    
 from gensim.models.callbacks import CallbackAny2Vec
 import logging
 from gensim.models import phrases
