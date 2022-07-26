@@ -1,7 +1,3 @@
-
-import markdown
-markdown.markdown('[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/niteshjindal170988/supervised-learning/blob/main/classification/decision-tree/decision-tree.ipynb)')
-
 import pandas as pd
 pd.set_option('display.max_colwidth', -1)
 import os
