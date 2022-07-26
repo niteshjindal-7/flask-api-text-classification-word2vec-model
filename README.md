@@ -8,6 +8,28 @@ To run the .py files in colab, please follow below steps:
 !git clone https://github.com/niteshjindal170988/flask-api-text-classification-word2vec-model.git
 
 
+<br>
+2. Change the directory path:
+%cd flask-api-text-classification-word2vec-model
 
-2. !ipython <.py file path> for example, if you wish to open model_building.py, run-
-!ipython model_building.py
+
+<br>
+3. Check current directory path:
+!pwd
+
+
+<br>
+4. Run utilityfunction.py:
+!python utilityfunction.py
+
+
+<br>
+5. Run model_building.py:
+!python model_building.py
+
+
+<br>
+6. Run model_testing_api.py:
+!python model_testing_api.py
+
+
