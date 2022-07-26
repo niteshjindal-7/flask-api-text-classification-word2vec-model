@@ -17,3 +17,6 @@ Open model_testing_api.py in Colab:
 
 
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/niteshjindal170988/supervised-learning/blob/main/classification/decision-tree/decision-tree.ipynb)
+
+
