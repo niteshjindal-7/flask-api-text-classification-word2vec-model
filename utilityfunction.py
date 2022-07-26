@@ -24,8 +24,8 @@ from gensim.models import phrases
 try:
 ###################speech to text service when video resides on azure storage blob.##################
     speech_account_name="myspeechtotextaccount"
-    SPEECH_KEY= "3efe3c06fbf4408db59b2340ce352d3a"
-    SPEECH_KEY1="ba99b392673440ada87ee3263c626014"
+    SPEECH_KEY= "3efe3c06XXXXXXX52d3a"
+    SPEECH_KEY1="ba99b392673440XXXXXXXX626014"
     SERVICE_REGION="centralindia"
     ENDPOINT="https://centralindia.api.cognitive.microsoft.com/sts/v1.0/issuetoken"
 
@@ -40,7 +40,7 @@ try:
             format="%(asctime)s %(message)s", datefmt="%m/%d/%Y %I:%M:%S %p %Z")
 
     # Your subscription key and region for the speech service
-    SUBSCRIPTION_KEY = "3efe3c06fbf4408db59b2340ce352d3a"
+    SUBSCRIPTION_KEY = "3efe3c06XXXXXXX52d3a"
     SERVICE_REGION = "centralindia"
     # SERVICE_REGION = "westus"
     NAME = "S2T"

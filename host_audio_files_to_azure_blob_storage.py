@@ -17,7 +17,7 @@ text_dir = "/home/nitesh/Documents/AMPBA/AISPRY/Text_Files/"
 #################Use Azure Storage Blob Service to host the audio files############
 
 account_name='myaudiostorageaccount'
-account_key='zsOb5yGO0/pLa61E/DM/Hmd1aGttlkO7PQOadyS+bO9ABgOoV589HdIy/im+Ng3TP3u6m1Wi6nJH+AStZxn6Wg=='
+account_key='zsOb5yGO0/pLa61E/DM/XXXXXXXXXXXXXXXXXXXX/im+Ng3TP3u6m1Wi6nJH+AStZxn6Wg=='
 # block_blob_service=BlockBlobService(account_name=account_name, account_key=account_key)
 container_name='myresourcegroup'
 
