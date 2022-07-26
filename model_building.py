@@ -2,8 +2,6 @@
 import markdown
 markdown.markdown('[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/niteshjindal170988/supervised-learning/blob/main/classification/decision-tree/decision-tree.ipynb)')
 
-'<p><a href="https://colab.research.google.com/github/niteshjindal170988/supervised-learning/blob/main/classification/decision-tree/decision-tree.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>'
-
 import pandas as pd
 pd.set_option('display.max_colwidth', -1)
 import os
