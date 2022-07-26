@@ -1,0 +1,157 @@
+,content,topics
+0,,0_Lecture_12__k-Nearest_Neighbour.wav
+1,good morning today we will start module 3 in this module we will talk about instance based learning and then we will talk about feature selection will show how instance based learning feature dimensionality is a problem and feature large having many features is a problem for many other learning outcomes and we will look for methods,1_Lecture_12__k-Nearest_Neighbour.wav
+2,part of the lecture which we will have today we will talk about instance based learning and specifically the K nearest neighbour so what we have is that suppose in the machine learning in supervised learning you have got training examples x y a set of them x y y or you can say XI XI so these examples are given to you and given the examples you want to come up with the function if you want to find an estimate for the funk,2_Lecture_12__k-Nearest_Neighbour.wav
+3,we have seen how to learn linear regression a linear function as or a decision tree a function which is a decision tree to estimate this today we will look at another setting called instance based learning which is also called Levi law,3_Lecture_12__k-Nearest_Neighbour.wav
+4,discuss,4_Lecture_12__k-Nearest_Neighbour.wav
+5,lazy I will tell what it means instaface learning what we do is that when we get the training examples we do not process them and Lana model instead we just Store,5_Lecture_12__k-Nearest_Neighbour.wav
+6,need to classify an instance that time we do something so we do Not immediately learn the model that is why the algorithm that we will discuss is also called as lazy,6_Lecture_12__k-Nearest_Neighbour.wav
+7,does not come up with the model at Priory rather when it gets the test instance it uses the stored instances in memory in order to find the possible,7_Lecture_12__k-Nearest_Neighbour.wav
+8,so how does it do it suppose this is the instant space,8_Lecture_12__k-Nearest_Neighbour.wav
+9,points in the instance space for each point you have the corresponding X value and the Y value when you are given a new insta,9_Lecture_12__k-Nearest_Neighbour.wav
+10,find what is the closest instance in terms of the extra value and suppose this is the closest instance you find the Y value of the instance when you guess the Y value of this as the Y value of this this is the basic nearest neighbour,10_Lecture_12__k-Nearest_Neighbour.wav
+11,this Given Up test instance you have to find similar instances,11_Lecture_12__k-Nearest_Neighbour.wav
+12,find a simple the most similar instance or we will see in some cases we want to find some neighbouring instances the most the nearest instances now how to find the similarity on what is the distance function of the metric that we consider for similarity we can use a standard metric like euclidean dost or other Matrix like cosine and other depending on the type of data that you are looking for the basic K nearest neighbour algorithm that I am going to describe this called the K nearest neighbour,12_Lecture_12__k-Nearest_Neighbour.wav
+13,and letters outline that,13_Lecture_12__k-Nearest_Neighbour.wav
+14,Sadak ke nearest neighbour works as follows as we have seen earlier learning outcomes have two phases training phase and testing phase of the use base so in the training phase normally the model is,14_Lecture_12__k-Nearest_Neighbour.wav
+15,I have sir,15_Lecture_12__k-Nearest_Neighbour.wav
+16,for such Lane lazy algorithms we do not learn your model during training in the training with face we just save the training in,16_Lecture_12__k-Nearest_Neighbour.wav
+17,Vijay face,17_Lecture_12__k-Nearest_Neighbour.wav
+18,possible in a more advanced implementation to store the examples in some data structure so that searching sources examples become faster but we'll talk about that later so the basically we just told the instances that prediction time to this training type sweat prediction time what we do,18_Lecture_12__k-Nearest_Neighbour.wav
+19,get the test instance and find the K training examples so we get the test,19_Lecture_12__k-Nearest_Neighbour.wav
+20,best insta,20_Lecture_12__k-Nearest_Neighbour.wav
+21,given only the X value given only X and we have to predict the corresponding why it so what we do is that we find,21_Lecture_12__k-Nearest_Neighbour.wav
+22,training example,22_Lecture_12__k-Nearest_Neighbour.wav
+23,,23_Lecture_12__k-Nearest_Neighbour.wav
+24,one Viva,24_Lecture_12__k-Nearest_Neighbour.wav
+25,that is closest to,25_Lecture_12__k-Nearest_Neighbour.wav
+26,,26_Lecture_12__k-Nearest_Neighbour.wav
+27,,27_Lecture_12__k-Nearest_Neighbour.wav
+28,among all the examples that we have stored in the training phase given text,28_Lecture_12__k-Nearest_Neighbour.wav
+29,that value of XI so that it is closest to earth,29_Lecture_12__k-Nearest_Neighbour.wav
+30,proprietor,30_Lecture_12__k-Nearest_Neighbour.wav
+31,why it as the output so we predict sorry not Y to Y 1 as the output,31_Lecture_12__k-Nearest_Neighbour.wav
+32,,32_Lecture_12__k-Nearest_Neighbour.wav
+33,this is the basic one nearest neighbour,33_Lecture_12__k-Nearest_Neighbour.wav
+34,in a more generalized form of the Alter The instead of finding the single nearest neighbour instead of finding the single example which is closest to the text example what we do is that we find ke training example,34_Lecture_12__k-Nearest_Neighbour.wav
+35,one by one,35_Lecture_12__k-Nearest_Neighbour.wav
+36,white,36_Lecture_12__k-Nearest_Neighbour.wav
+37,ke bike,37_Lecture_12__k-Nearest_Neighbour.wav
+38,are,38_Lecture_12__k-Nearest_Neighbour.wav
+39,,39_Lecture_12__k-Nearest_Neighbour.wav
+40,ok maybe 345 sector we find K nearest examples nearest,40_Lecture_12__k-Nearest_Neighbour.wav
+41,and predict the output why it what should we predict it depends on whether we are doing a classification problem or a regression problem for a classification,41_Lecture_12__k-Nearest_Neighbour.wav
+42,cat Y1 Y to y k and we can predict that class which is the majority class among Y1 Y2 bike we can predict the most frequent or the measure,42_Lecture_12__k-Nearest_Neighbour.wav
+43,,43_Lecture_12__k-Nearest_Neighbour.wav
+44,Sabhi project,44_Lecture_12__k-Nearest_Neighbour.wav
+45,the majority class,45_Lecture_12__k-Nearest_Neighbour.wav
+46,,46_Lecture_12__k-Nearest_Neighbour.wav
+47,Y1 Y2,47_Lecture_12__k-Nearest_Neighbour.wav
+48,regression,48_Lecture_12__k-Nearest_Neighbour.wav
+49,got difference numerical outputs why one by two white cat and we will predict the average,49_Lecture_12__k-Nearest_Neighbour.wav
+50,project the average,50_Lecture_12__k-Nearest_Neighbour.wav
+51,Y1 among Y1 Y to y k i find out the average and project it as the estimate of white this is the basic K nearest neighbour algorithm which is,51_Lecture_12__k-Nearest_Neighbour.wav
+52,latest look at the one,52_Lecture_12__k-Nearest_Neighbour.wav
+53,one nearest neighbour let us see if you look at this slide here these points are the different instances in the instance space right now depending on where your test point will be if your test point is here the closest point to the,53_Lecture_12__k-Nearest_Neighbour.wav
+54,,54_Lecture_12__k-Nearest_Neighbour.wav
+55,,55_Lecture_12__k-Nearest_Neighbour.wav
+56,we have different points the classification of a point in this space for one nearest neighbour is coming from the name most nearby point therefore you can think of we can divide the space into regions so this blue origin this violet region purple or whatever purple region corresponds to those places in space for which this is the,56_Lecture_12__k-Nearest_Neighbour.wav
+57,region is the region for which this is the nearest neighbour so we have provided that the space into different regions and this particular type of division of this structure it is structures called the voronoi diagram in this voronoi diagram which can be constructed by you take any two neighbouring points and to a find the perpendicular bisector of the line joining the two points that will give you are separation surface like this you can draw the voronoi diagram and in this voronoi diagram in this region this is the nearest point for this region all points in this region this is the neighbouring point so this is captured the decision boundary of one,57_Lecture_12__k-Nearest_Neighbour.wav
+58,this slide this is a basic k-nearest neighbour classification which we have already discussed in the training time training method is to save the training examples at protection time you find the ke training examples that are closest to the test example x for classification you predict the most frequent class among those k y values for regression you predict the average among the wires so this is a very simple,58_Lecture_12__k-Nearest_Neighbour.wav
+59,what we will discuss our certain points related to this algorithm and how to improve the some of the issues that we will discuss is when we use K nearest neighbour with K is greater than one is there a possibility of giving different weights to this ke,59_Lecture_12__k-Nearest_Neighbour.wav
+60,we can wait different examples may be because of,60_Lecture_12__k-Nearest_Neighbour.wav
+61,second issue is how to measure close this what type of distance function one can use today we will discuss that we can use euclidean distance function as one of the metric but other distance functions are possible the third issue which is important which will discuss later is how to find the closest points quickly at run time as we have seen in such lazy arable during training time we do not learn about to at production time we get a point and find the,61_Lecture_12__k-Nearest_Neighbour.wav
+62,do not use a good data structure of a good method to stop the examples we have to go through all the training examples find the distance and find the smallest of them and if the training set is large this may take considerable time so one issue of concern is to setup data structures so that this can be done efficiently which we will not discuss today but you will get some ideas in,62_Lecture_12__k-Nearest_Neighbour.wav
+63,first we know that our standard distance function the euclidean distance function in euclidean distance function what we do suppose each instance,63_Lecture_12__k-Nearest_Neighbour.wav
+64,,64_Lecture_12__k-Nearest_Neighbour.wav
+65,attributes XI 12,65_Lecture_12__k-Nearest_Neighbour.wav
+66,suppose we have an attributes and between two instances XI and XJ,66_Lecture_12__k-Nearest_Neighbour.wav
+67,Shivan exito,67_Lecture_12__k-Nearest_Neighbour.wav
+68,given these two instances we find want to find how close there I think all of you know about the euclidean distance in euclidean distance how do we measure the distance between this point we say that the distance,68_Lecture_12__k-Nearest_Neighbour.wav
+69,,69_Lecture_12__k-Nearest_Neighbour.wav
+70,i x j is given by,70_Lecture_12__k-Nearest_Neighbour.wav
+71,,71_Lecture_12__k-Nearest_Neighbour.wav
+72,i k minus x whole square,72_Lecture_12__k-Nearest_Neighbour.wav
+73,Sigma,73_Lecture_12__k-Nearest_Neighbour.wav
+74,equal to 1,74_Lecture_12__k-Nearest_Neighbour.wav
+75,is the euclidean,75_Lecture_12__k-Nearest_Neighbour.wav
+76,find the euclidean distance from a test point to all the points that we have got from training and sylhet that point which has the smallest you,76_Lecture_12__k-Nearest_Neighbour.wav
+77,when we take care has to be more than one we can take the official regression problem we can take the average of the Bells now when do we go for averaging with large ke or and when we go for cake 121 go for averaging under circumstances where there are no is in,77_Lecture_12__k-Nearest_Neighbour.wav
+78,the noise the instance that is closest to the test instance may not capture everything about the test instance in a better way than other instance which is likely for the Ravi but still,78_Lecture_12__k-Nearest_Neighbour.wav
+79,there can be no is in class,79_Lecture_12__k-Nearest_Neighbour.wav
+80,,80_Lecture_12__k-Nearest_Neighbour.wav
+81,classes may be over,81_Lecture_12__k-Nearest_Neighbour.wav
+82,,82_Lecture_12__k-Nearest_Neighbour.wav
+83,,83_Lecture_12__k-Nearest_Neighbour.wav
+84,circumstances there is a case for using K larger than one and we will see that when we use a larger value of k we get a better a smooth,84_Lecture_12__k-Nearest_Neighbour.wav
+85,,85_Lecture_12__k-Nearest_Neighbour.wav
+86,we will worry about his when we look at the euclidean distance,86_Lecture_12__k-Nearest_Neighbour.wav
+87,taking the sum of square root of sum of squares of the distance for each attribute let us not use ke here because ke is used for K nearest neighbour but here we are talking about an index variable so latest news,87_Lecture_12__k-Nearest_Neighbour.wav
+88,all attributes are not equally important for the attributes may have different scales so a normal euclidean distance,88_Lecture_12__k-Nearest_Neighbour.wav
+89,all the attributes at the same scale but there may be a case for giving different weights with attribute when you are giving equal weights to the attributes you can give equal with only under certain circumstances a certain exam,89_Lecture_12__k-Nearest_Neighbour.wav
+90,equal weights to all attributes now if you can do so only if the scale of the attributes,90_Lecture_12__k-Nearest_Neighbour.wav
+91,,91_Lecture_12__k-Nearest_Neighbour.wav
+92,scale suppose height is an attribute if you are measuring height in cm versus height in feet the differences are not the,92_Lecture_12__k-Nearest_Neighbour.wav
+93,you have to win the different attributes depending on about scale you use it it will contribute more value or less value to the distance so if you're giving equal weights you resuming that the scale of the attributes and the difference,93_Lecture_12__k-Nearest_Neighbour.wav
+94,,94_Lecture_12__k-Nearest_Neighbour.wav
+95,XI -1 chamber how different they are for different pairs of training examples if that is similar then only,95_Lecture_12__k-Nearest_Neighbour.wav
+96,secondly you make the assumption that you're scale active,96_Lecture_12__k-Nearest_Neighbour.wav
+97,so that they have equal rain,97_Lecture_12__k-Nearest_Neighbour.wav
+98,some values from 0 to 1000 and other has banned from 0 to 1 then their range is not the same so the Rangers should be similar and the variance should be,98_Lecture_12__k-Nearest_Neighbour.wav
+99,you can go for Chacha simple euclidean distance function also URL during that you are taking x minus y square and you mean that classes,99_Lecture_12__k-Nearest_Neighbour.wav
+100,resumption,100_Lecture_12__k-Nearest_Neighbour.wav
+101,"10,000 stericlean",101_Lecture_12__k-Nearest_Neighbour.wav
+102,under the presumption you can use basic euclidean,102_Lecture_12__k-Nearest_Neighbour.wav
+103,but what if the classes are not serical what if one attribute is more important than another attribute what if some attributes have more noise than what you have in other attributes and those cases are this distance function will have some,103_Lecture_12__k-Nearest_Neighbour.wav
+104,and the way you can overcome this problem there are several things that one can do one is used lajake to smooth out the difference,104_Lecture_12__k-Nearest_Neighbour.wav
+105,and you use weighted euclidean you use weighted distance function,105_Lecture_12__k-Nearest_Neighbour.wav
+106,what we will do the now when you say use larger ke you have to have some idea,106_Lecture_12__k-Nearest_Neighbour.wav
+107,small ke impact I think before we try to look at that let's look at some,107_Lecture_12__k-Nearest_Neighbour.wav
+108,picture taken from the book by his state it should be and fried Ban shows an example where we have three classes blue Red and Green they are denoted by the blue Red and Green,108_Lecture_12__k-Nearest_Neighbour.wav
+109,one nearest,109_Lecture_12__k-Nearest_Neighbour.wav
+110,boundaries between blue and green green and red red and blue abstract based on that these lines show you the decision boundary between the classes so you see that this decision boundary is very is not yet it's not at all sports so what we can say is that if you have small value of k,110_Lecture_12__k-Nearest_Neighbour.wav
+111,small value of k it captures fine structures of the problem space,111_Lecture_12__k-Nearest_Neighbour.wav
+112,these lines capture very fine structures of the problem space for example here you see in this region,112_Lecture_12__k-Nearest_Neighbour.wav
+113,classes blue there is in this region the class is red light show in the small region here are the classes blue where is this class is added to the find differences between the classes and captured when ke is born so when small ke captures fine structure,113_Lecture_12__k-Nearest_Neighbour.wav
+114,problems faced better,114_Lecture_12__k-Nearest_Neighbour.wav
+115,search 5 structures exam,115_Lecture_12__k-Nearest_Neighbour.wav
+116,,116_Lecture_12__k-Nearest_Neighbour.wav
+117,,117_Lecture_12__k-Nearest_Neighbour.wav
+118,Meri necessary training set,118_Lecture_12__k-Nearest_Neighbour.wav
+119,on the other hand you can use large value of k under the following circumstances let us first look at,119_Lecture_12__k-Nearest_Neighbour.wav
+120,an example on the same,120_Lecture_12__k-Nearest_Neighbour.wav
+121,data set choosing 15 nearest neighbour what you notice here is that the classes are more smooth the neighbouring classes in a year all of them are classified as Red rather than blue for 15 years TNEB Ae use large ke under these circumstances,121_Lecture_12__k-Nearest_Neighbour.wav
+122,news large ke the classified that you get is less sensitive to,122_Lecture_12__k-Nearest_Neighbour.wav
+123,particularly noise in the output class,123_Lecture_12__k-Nearest_Neighbour.wav
+124,,124_Lecture_12__k-Nearest_Neighbour.wav
+125,property cool Ali class 9,125_Lecture_12__k-Nearest_Neighbour.wav
+126,you get better probability estimates for discrete,126_Lecture_12__k-Nearest_Neighbour.wav
+127,and you can you,127_Lecture_12__k-Nearest_Neighbour.wav
+128,discrete classes classes at discrete you get better probability estimates if use large values of K thirdly if you have larger size of training set then you can use large values of K so larger training,128_Lecture_12__k-Nearest_Neighbour.wav
+129,allows you to you,129_Lecture_12__k-Nearest_Neighbour.wav
+130,,130_Lecture_12__k-Nearest_Neighbour.wav
+131,you have very small training set size you cannot use large get you have to use,131_Lecture_12__k-Nearest_Neighbour.wav
+132,The basic idea of getting different values of K now let us look at the next diagram on the slide so this picture shows,132_Lecture_12__k-Nearest_Neighbour.wav
+133,this shows the number x axis is the number of neighbours the blue line is test error,133_Lecture_12__k-Nearest_Neighbour.wav
+134,green line is 10 fold cross validation error and the red line is training error and then that's line is base error which is close to the true,134_Lecture_12__k-Nearest_Neighbour.wav
+135,that in the training set as we are increasing the value of k in order initially the error will increase and error will after that remained almost study but for the test error and for the cross validation error we see that for cake 12141 nearest neighbour there is high and then the error Falls off after sometime there arises from the it's almost fixed so this is the region where the test error is smallest and this is the region where the cross validation error is smallest in this particular example the error is smallest at around ke equal to 5 aur cake 127 sofa for small cal Hai a large ke also it increases and some middle value of k u have the best performance if you you look at the test and now we come to the second question the first issue was using different value of k the second issue was to use weight and distance function now we will see how we can use wait a distance function in a case of weighted distance function what we do is that we find the distance in a let me right in our notation distance between XR and x,135_Lecture_12__k-Nearest_Neighbour.wav
+136,,136_Lecture_12__k-Nearest_Neighbour.wav
+137,we have different attributes with different weights and attributes and their weights w1 w2 w and so we take Sigma and equal to 12 N and then we,137_Lecture_12__k-Nearest_Neighbour.wav
+138,WM inter,138_Lecture_12__k-Nearest_Neighbour.wav
+139,I M minus x j m whole square is weighted euclidean distance,139_Lecture_12__k-Nearest_Neighbour.wav
+140,different weights for different attributes so for those attributes which are more important for the particular classification we can use large events and for less important attributes we can use border with these waves can also be decided based on you know if an attribute has larger range we can use small meals if the small range we can use larger with or we can scale that attribute so that they have similar Ranger we can sort of normalised attributes so that they have same main and same standard deviation based on that we can then fix a b depending on the importance of the attributes and if an attribute does not matter it is irrelevant that tribute,140_Lecture_12__k-Nearest_Neighbour.wav
+141,rings of 20 important question that if we have the instance space defined in terms of a large number of attributes of features it poses a problem in defining and appropriate similarity metric and it may also cause a problem for different other learning problems because some features may be more important than others and some features may be irrelevant and specifically impacts k-nearest neighbour or instance based learning algorithms greatly so it is important for us to remove,141_Lecture_12__k-Nearest_Neighbour.wav
+142,,142_Lecture_12__k-Nearest_Neighbour.wav
+143,if you have a very high dimensional space,143_Lecture_12__k-Nearest_Neighbour.wav
+144,items which are similar Mein still difference I'm an important attributes and the differences in distance between different pairs of items will be almost similar so it will be difficult to find good representative training examples for a give,144_Lecture_12__k-Nearest_Neighbour.wav
+145,feature reduction is very important we will talk about feature reduction in later class baby in the neck,145_Lecture_12__k-Nearest_Neighbour.wav
+146,to summarise in distance weighted K nearest neighbour we have a tradeoff between small and large ke which can be difficult because large K means more emphasis on their neighbours so in the weighted KNN the prediction is based on this weighted average,146_Lecture_12__k-Nearest_Neighbour.wav
+147,and this way it can be based on the distance the weight can be proportional to the inverse of the distance between the two examples so for a particular test example,147_Lecture_12__k-Nearest_Neighbour.wav
+148,suppose the test example and these are three nearest neighbours now this is closer,148_Lecture_12__k-Nearest_Neighbour.wav
+149,is medium distance this is a letter for now we look at the class of all these three instances and take a weighted average we give larger weight to,149_Lecture_12__k-Nearest_Neighbour.wav
+150,smaller to this based on this we can do the averaging this is called distance weighted Ken,150_Lecture_12__k-Nearest_Neighbour.wav
+151,using this distance in another weight based on the inverse of the distance we can use other types of functions for this waiting ideas is locally weighted averaging what locally weighted averaging does is that supports ke is the number of training points so instead of in a vehicle also take insulin taking care of three or four or five we could take very large value of k in fact ke could be and tired,151_Lecture_12__k-Nearest_Neighbour.wav
+152,we could give different weights to differ,152_Lecture_12__k-Nearest_Neighbour.wav
+153,the total number of training points we can define a waiting function so that the weight of nearby functions will be reasonable it will have some reasonable value but for further training points also some weight will be taken but that wait function it will fall of rapidly with for example you could think of the waiting function based on based on abortion function,153_Lecture_12__k-Nearest_Neighbour.wav
+154,right,154_Lecture_12__k-Nearest_Neighbour.wav
+155,still 17 function suppose this is your test point so any example which is here in it will get this much of it and example here will get this much of it example here will get this much of a and examples further away will get almost zero but it to get some value of it so we could use different waiting functions for example here we are saying the blue ke is 1 by 8 to the power kernel with into distance between City and seed sowing using exponential function and the weight is falling of rapidly after it controls how much of the neighborhood you want to give reasonable waiting with kernel with this large you are considering more in a more area in the neighborhood if it is small you are using less area neighbourhood based on that you can do locally weighted averaging with this some Too Close for this today's lecture in the next life lecture we will discuss issues about feature dimensionality reduction and other issues,155_Lecture_12__k-Nearest_Neighbour.wav

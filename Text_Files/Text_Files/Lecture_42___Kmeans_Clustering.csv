@@ -1,0 +1,168 @@
+,content,topics
+0,,0_Lecture_42___Kmeans_Clustering.wav
+1,Tujhe we will talk about a particular class 3 out in the last class we discussed about the various types of clustering out so we mentioned partitioning as one of the methods of class,1_Lecture_42___Kmeans_Clustering.wav
+2,best algorithm specifically the k-means,2_Lecture_42___Kmeans_Clustering.wav
+3,how to dumb we are given,3_Lecture_42___Kmeans_Clustering.wav
+4,we have to produce cake clusters showcase given to us and we are given a set of object for instance,4_Lecture_42___Kmeans_Clustering.wav
+5,latest Call detect,5_Lecture_42___Kmeans_Clustering.wav
+6,comprising of letters a m object's x 1 X 2 x,6_Lecture_42___Kmeans_Clustering.wav
+7,which object letter for resume is described in terms of N features so we can write that it's can be written in terms of,7_Lecture_42___Kmeans_Clustering.wav
+8,and features exercise 12.2 XI and right so we are now we have what we have to do is to get a so we have two output ke cluster,8_Lecture_42___Kmeans_Clustering.wav
+9,the set of clusters comprising of,9_Lecture_42___Kmeans_Clustering.wav
+10,S1 S2,10_Lecture_42___Kmeans_Clustering.wav
+11,class 10 how to book the clusters that it will output will form a partition of the objects that is each party class 10 is destroyed and together they covered the entire set of,11_Lecture_42___Kmeans_Clustering.wav
+12,cluster,12_Lecture_42___Kmeans_Clustering.wav
+13,is represented by the,13_Lecture_42___Kmeans_Clustering.wav
+14,centre,14_Lecture_42___Kmeans_Clustering.wav
+15,latest college new why it is not the parameter with respect to the cluster,15_Lecture_42___Kmeans_Clustering.wav
+16,find K clusters we have to find us and what would be our criteria for choosing the cluster we want to find the clusters so that it can optimise some chosen,16_Lecture_42___Kmeans_Clustering.wav
+17,Optimisation criteria is the within cluster sum of squared distance mentioned that a cluster is touched,17_Lecture_42___Kmeans_Clustering.wav
+18,plastid are similar to each other objects belonging to different clusters are,18_Lecture_42___Kmeans_Clustering.wav
+19,possible Optimisation criteria,19_Lecture_42___Kmeans_Clustering.wav
+20,sum of squares distance which we can write as wcs,20_Lecture_42___Kmeans_Clustering.wav
+21,,21_Lecture_42___Kmeans_Clustering.wav
+22,sum of,22_Lecture_42___Kmeans_Clustering.wav
+23,can be computed,23_Lecture_42___Kmeans_Clustering.wav
+24,so given a particular set of clusters the within cluster sum of distance is obtained as some over equal to 12 ke bad case the number of,24_Lecture_42___Kmeans_Clustering.wav
+25,pencilmation,25_Lecture_42___Kmeans_Clustering.wav
+26,belongs to a Si for all objects belonging to,26_Lecture_42___Kmeans_Clustering.wav
+27,find XI - new,27_Lecture_42___Kmeans_Clustering.wav
+28,we look at each of the ke clusters for oneplus will look at all the objects in the cluster and find its distance from the clusters that the sum of the square distance for all the elements in this cluster some robot all the clusters it's me the within cluster sum of,28_Lecture_42___Kmeans_Clustering.wav
+29,set of clusters we can compute this we want that set of clusters for which this is minimise so what we want,29_Lecture_42___Kmeans_Clustering.wav
+30,find out that set of clusters for which this quantity is minimised,30_Lecture_42___Kmeans_Clustering.wav
+31,,31_Lecture_42___Kmeans_Clustering.wav
+32,finding a set of clusters which exactly minimises criteria is heart problem so what we do is that we will describe a simple heuristic algorithm called came inside which was designed by McQueen in 1967 can use was proposed by Max queen,32_Lecture_42___Kmeans_Clustering.wav
+33,,33_Lecture_42___Kmeans_Clustering.wav
+34,1967 and this is accuristix algorithm which tries to come up with a set of clusters that tries to minimise this within cluster sum of squares even though it may not be the exam,34_Lecture_42___Kmeans_Clustering.wav
+35,describe the K means algorithm,35_Lecture_42___Kmeans_Clustering.wav
+36,,36_Lecture_42___Kmeans_Clustering.wav
+37,,37_Lecture_42___Kmeans_Clustering.wav
+38,,38_Lecture_42___Kmeans_Clustering.wav
+39,,39_Lecture_42___Kmeans_Clustering.wav
+40,,40_Lecture_42___Kmeans_Clustering.wav
+41,what we do is that we are given cake,41_Lecture_42___Kmeans_Clustering.wav
+42,give,42_Lecture_42___Kmeans_Clustering.wav
+43,the set of objects X so assuming that we have two features we have different point,43_Lecture_42___Kmeans_Clustering.wav
+44,presenting the right and suppose we are given equal to 3 this is,44_Lecture_42___Kmeans_Clustering.wav
+45,points are X and suppose you are given a cake,45_Lecture_42___Kmeans_Clustering.wav
+46,we need to find a set of three clusters so what we do in K means algorithm is we identify running,46_Lecture_42___Kmeans_Clustering.wav
+47,cluster,47_Lecture_42___Kmeans_Clustering.wav
+48,off the data points let us say we choose this point this point and this,48_Lecture_42___Kmeans_Clustering.wav
+49,randomly pick up three of the points and assign them as the cluster centre of class 10th,49_Lecture_42___Kmeans_Clustering.wav
+50,after we have a sign that now what we do is that we look at each of the points and assign them to the closest cluster to this point gets assigned to this one this gets assigned to this one this gets assigned to this one this point get the same here this gets assigned here this gets a sign here at risk assessment year this get assigned so we randomly pick up three seats and assign each of the data points to the closed,50_Lecture_42___Kmeans_Clustering.wav
+51,after we have done that now these points have gone to the same seed so we now take this point Sharif compute the cluster Centre supports the new cluster centre of these three points is found here,51_Lecture_42___Kmeans_Clustering.wav
+52,suppose the new centre of these points is found here and the new centre of this point system,52_Lecture_42___Kmeans_Clustering.wav
+53,the second iteration,53_Lecture_42___Kmeans_Clustering.wav
+54,take these are the cluster centres and repeat the process that is now we are again we look at the points and find out which cluster it will be they will get a sign for example now it may be possible that this is the assignment,54_Lecture_42___Kmeans_Clustering.wav
+55,,55_Lecture_42___Kmeans_Clustering.wav
+56,based on the new cluster centres we again try to reassign the points to the clusters and we continue,56_Lecture_42___Kmeans_Clustering.wav
+57,continue until the converts,57_Lecture_42___Kmeans_Clustering.wav
+58,very simple given ke we randomly choose Ke Data points to be the initial cluster Centre we assign each data point to the closest + the centre we compute the cluster centres using the current cluster membership and if the convergence criteria is not met go to court will soon see what sort of convergence criteria example also if we randomly choose these three points 80 based on that we assign points to cluster c and then we compute the cluster centres and this process is continued,58_Lecture_42___Kmeans_Clustering.wav
+59,,59_Lecture_42___Kmeans_Clustering.wav
+60,,60_Lecture_42___Kmeans_Clustering.wav
+61,situation when between two iterations the class the sentence to not change that is there is no reassignment of points to the,61_Lecture_42___Kmeans_Clustering.wav
+62,stop if there is no change in the,62_Lecture_42___Kmeans_Clustering.wav
+63,very little decrease in the summer,63_Lecture_42___Kmeans_Clustering.wav
+64,possibility under which we can stop now this out,64_Lecture_42___Kmeans_Clustering.wav
+65,so that we can show that the sum of square,65_Lecture_42___Kmeans_Clustering.wav
+66,will go on decreasing from m,66_Lecture_42___Kmeans_Clustering.wav
+67,this process is bound to convert because this for this is going,67_Lecture_42___Kmeans_Clustering.wav
+68,how to convert a converging process it will converge to a local minima of within clusters,68_Lecture_42___Kmeans_Clustering.wav
+69,,69_Lecture_42___Kmeans_Clustering.wav
+70,illustrate,70_Lecture_42___Kmeans_Clustering.wav
+71,K means algorithm on a particular data set on this data set of the black points carried over for 9,71_Lecture_42___Kmeans_Clustering.wav
+72,patient the red blue and green are chosen as cluster centres as a resource,72_Lecture_42___Kmeans_Clustering.wav
+73,assignment of the points and based on this assignment it shows the new cluster centres in iteration to iteration 3 result the cluster centres iteration 4 5 and 9 and then which see that,73_Lecture_42___Kmeans_Clustering.wav
+74,example of K means,74_Lecture_42___Kmeans_Clustering.wav
+75,when we use the k-means algorithm we have to choose a measure of similarity or a measure of distance,75_Lecture_42___Kmeans_Clustering.wav
+76,distance measures that one could use more stuff you will be familiar to the UK and,76_Lecture_42___Kmeans_Clustering.wav
+77,euclidean distance is the sum of the square,77_Lecture_42___Kmeans_Clustering.wav
+78,euclidean distance is given by,78_Lecture_42___Kmeans_Clustering.wav
+79,XI minus x JS,79_Lecture_42___Kmeans_Clustering.wav
+80,Root over,80_Lecture_42___Kmeans_Clustering.wav
+81,is there ke clusters it will look at each cluster it look and the points belonging to the cluster and,81_Lecture_42___Kmeans_Clustering.wav
+82,sum of squared distance between the,82_Lecture_42___Kmeans_Clustering.wav
+83,,83_Lecture_42___Kmeans_Clustering.wav
+84,of the euclidean another and other distance function that one can use is the Manhattan distance which is simple,84_Lecture_42___Kmeans_Clustering.wav
+85,Sigma ke x minus x GS in fact these two can be pleased to and something similar can be brought under main course ki measure main ko uski family of distance measured is a more general measure of distance between two points XI and exchange where there are in features excellent stay at two points then features and the distance between them is equal to at think I made a mistake so this is not ke this is Sigma over Sigma over as equal to 1 to end when n is the number of features so what we do is that we look at this is the distance between two points each having and features and we take the distance between prom every dimensional the XI vs minus x JS is the difference in a particular dimension of these two objects in euclidean distance with quick access - 6 years whole square submission and the whole thing Root over in Manhattan distance cal City block this we just 1 exercise minus x Jaise absolute value and,85_Lecture_42___Kmeans_Clustering.wav
+86,cal the cosine measure which is a very popular measure when we are dealing with text documents in text documents we often represents a simple representation of a text document is as,86_Lecture_42___Kmeans_Clustering.wav
+87,we look at the words in the document and the number of words we look at the set of words and the frequency of each word so when we represent a document as a vector the distance between two different documents,87_Lecture_42___Kmeans_Clustering.wav
+88,used as a cosine of the two vectors present in the document is very popular when we work with text documents euclidean distance does not work well,88_Lecture_42___Kmeans_Clustering.wav
+89,distance measures for example the mahalanobis distance between 2.6 Ion exchange is given by x i minus x 6 sigma inverse x,89_Lecture_42___Kmeans_Clustering.wav
+90,correlation Coefficient for example Pearson correlation which is given by covariance of excellence Jet / the standard deviation of Exide X standard,90_Lecture_42___Kmeans_Clustering.wav
+91,testis measures can be used depending on the domain in which you are applying,91_Lecture_42___Kmeans_Clustering.wav
+92,is guaranteed to convert because as you go to the iterations the within squares within cluster sum of squared distance will go on monotonically decreasing and thus improve the Pose MJ suppose you have ke clusters M1 M2 MGR the means of the clusters and suppose mg is the number of members in,92_Lecture_42___Kmeans_Clustering.wav
+93,5 - a whole square this quantity reaches minimum under the following conditions these conditions are given as you take the differentiation of this you get Sigma - 2 x minus 1 equal to zero from this you will find that Sigma XI equal to Sigma a and because the cluster has MGM but this is equal to MJ or you take a equal to 1 by MJ Sigma XI so if you take a equal to 1 by MJ Sigma XI,93_Lecture_42___Kmeans_Clustering.wav
+94,the Chupa status the centre of the,94_Lecture_42___Kmeans_Clustering.wav
+95,do this then this is what we're doing in K means very computing the cluster Centre as the centroid of the points which belong to the clustered and if it to that this will give you a reduction in the quantity of the clusters,95_Lecture_42___Kmeans_Clustering.wav
+96,,96_Lecture_42___Kmeans_Clustering.wav
+97,the time to compute the distance between two objects is ko and n is the number of,97_Lecture_42___Kmeans_Clustering.wav
+98,clusters takes ok I'm so uniform many distance computations vi entry point where I am objects then features,98_Lecture_42___Kmeans_Clustering.wav
+99,M objects that I stay clusters in the reassignment step every object you checked its distance with each of the cluster centres and reassigned to the closest to the reassignment face will take ok I'm computations of distance and each computation of distance is takes time and so iteration takes ok M and so is there a t m,99_Lecture_42___Kmeans_Clustering.wav
+100,total time take,100_Lecture_42___Kmeans_Clustering.wav
+101,o PK,101_Lecture_42___Kmeans_Clustering.wav
+102,for K sound usually they converge quite quickly and it is usually,102_Lecture_42___Kmeans_Clustering.wav
+103,time to run this,103_Lecture_42___Kmeans_Clustering.wav
+104,advantages of K means it is a fast and easy to understand relatively efficient and it gives Board result when the data set a distinct or well separated,104_Lecture_42___Kmeans_Clustering.wav
+105,disadvantages it requires a Priority specification of the number of clusters that a square has to be given also the k-means algorithm that we have described does a hard assignment on partitioning of the objects to each object has to belong to exactly one cluster so there are situations where one object may have similarity to put,105_Lecture_42___Kmeans_Clustering.wav
+106,soft clustering algorithm which assign,106_Lecture_42___Kmeans_Clustering.wav
+107,multiple clusters per 10 km is a hard assignment,107_Lecture_42___Kmeans_Clustering.wav
+108,depending on the domain the distance measure has to be carefully chosen if using euclidean distance measure it leads to unequal Waiting of the underlying factors and it is not a very good distance function to be used for sometime,108_Lecture_42___Kmeans_Clustering.wav
+109,so came in call to the only work when the means of the objects can be defined so if the,109_Lecture_42___Kmeans_Clustering.wav
+110,using have a lot of categories then you cannot find the means so K means is not,110_Lecture_42___Kmeans_Clustering.wav
+111,k-means only gives you a local Optima not the,111_Lecture_42___Kmeans_Clustering.wav
+112,taken from Bishop spoken machine learning shows K means algorithm applied,112_Lecture_42___Kmeans_Clustering.wav
+113,if you look at an image and image can be described in terms of the number of in terms of the pixels there are various pixels in an image,113_Lecture_42___Kmeans_Clustering.wav
+114,pixel is described by the r g and B wax,114_Lecture_42___Kmeans_Clustering.wav
+115,image can have very many colours suppose you want to do not the image in terms of a few number of colours so what happened do is that you can take every colour that is there in the image and cluster,115_Lecture_42___Kmeans_Clustering.wav
+116,that's it take one to ten you can read draw the image using only 10 plus colours look at the slide we have X1 X2 X3 as the different pixel colours we use k-means algorithm which comes up with ke clusters of colours and this shows that when ke equal to 2 then used to colours will get this image 3 colours will get this image 10 colours will get this image was this is the original image this is an example of application of cabinets,116_Lecture_42___Kmeans_Clustering.wav
+117,example from the book where the green points are the objects the red and blue at the initial cluster centre,117_Lecture_42___Kmeans_Clustering.wav
+118,is shows the reassignment of points to the cluster centre,118_Lecture_42___Kmeans_Clustering.wav
+119,new cluster centres again the reassignment of the points the new cluster centre,119_Lecture_42___Kmeans_Clustering.wav
+120,assignment of the points new cluster centres reassignment of the points and there is cut,120_Lecture_42___Kmeans_Clustering.wav
+121,I will very briefly talk about model,121_Lecture_42___Kmeans_Clustering.wav
+122,we have an iterator,122_Lecture_42___Kmeans_Clustering.wav
+123,now I will very briefly describe a model based clustering algorithm in model based clustering what we do is that we as you,123_Lecture_42___Kmeans_Clustering.wav
+124,that that is a model from its the data is,124_Lecture_42___Kmeans_Clustering.wav
+125,,125_Lecture_42___Kmeans_Clustering.wav
+126,we want to find k cluster,126_Lecture_42___Kmeans_Clustering.wav
+127,prove that the model of the clusters is given by K probability,127_Lecture_42___Kmeans_Clustering.wav
+128,and the model parameters,128_Lecture_42___Kmeans_Clustering.wav
+129,chawal teacher to teacher for example we can assume that,129_Lecture_42___Kmeans_Clustering.wav
+130,cluster is model bhaiya,130_Lecture_42___Kmeans_Clustering.wav
+131,we can think of vitamin is the mean of the gosselin distribution corresponding to plaster one we can assume that all the options have same variance and saponification the variance of what he could also say that the parameters are new and variance mean and variance of cost that feature 12 seater ke and parameters of the probability distribution corresponding to the ke class,131_Lecture_42___Kmeans_Clustering.wav
+132,now we are given data x x is my set of objects so we have to find it,132_Lecture_42___Kmeans_Clustering.wav
+133,clustering behaviour that the data is being generated from a model we are given that data we have to find the per,133_Lecture_42___Kmeans_Clustering.wav
+134,find theta 2 theta,134_Lecture_42___Kmeans_Clustering.wav
+135,call this big tits,135_Lecture_42___Kmeans_Clustering.wav
+136,we have to find the parameters such that such that,136_Lecture_42___Kmeans_Clustering.wav
+137,likelihood of the data is the maximum for that you find that set of parameters for which the probability of generating x,137_Lecture_42___Kmeans_Clustering.wav
+138,we want to find theta sin theta to Pita K such that probability ex given the Terminator 2 theta case the highest or equivalent please such that the log of this probability is the highest this is called the likelihood of the data this is called the long likelihood of the data and we want to maximize this lot like,138_Lecture_42___Kmeans_Clustering.wav
+139,model we have a slight deviation from the earlier model we assume that a particular point x i,139_Lecture_42___Kmeans_Clustering.wav
+140,X I need not belong to only one cluster Raja exercise has a probability of belonging to different classes so I may have certain probability of belonging to the cluster theta one another probability of belonging to the plastics Peter to so that the sum of this,140_Lecture_42___Kmeans_Clustering.wav
+141,every point can be generated by multiple distributions with some probability this is what,141_Lecture_42___Kmeans_Clustering.wav
+142,Ford,142_Lecture_42___Kmeans_Clustering.wav
+143,standard how to do in order to do this and that also is called that em,143_Lecture_42___Kmeans_Clustering.wav
+144,have you that Vitamin C in the simplest case we assume that they represent the class,144_Lecture_42___Kmeans_Clustering.wav
+145,iterate between two,145_Lecture_42___Kmeans_Clustering.wav
+146,this Two Steps at the east and the M still in the East,146_Lecture_42___Kmeans_Clustering.wav
+147,assign the objects to play,147_Lecture_42___Kmeans_Clustering.wav
+148,,148_Lecture_42___Kmeans_Clustering.wav
+149,,149_Lecture_42___Kmeans_Clustering.wav
+150,step we estimate the model parameters based on this assign,150_Lecture_42___Kmeans_Clustering.wav
+151,,151_Lecture_42___Kmeans_Clustering.wav
+152,based on this assignment we estimate the model parameters so as to maximize the likelihood of the given assignment of points so we do a maximum likelihood estimate of the maximum likelihood estimate of the model parameters so this is the em album and these two steps,152_Lecture_42___Kmeans_Clustering.wav
+153,for example in order to assign object to clusters as he said that we need not do a hard assignment rather we do a probabilistic assignment so we probabilistically assign from points to clusters so we want to find probability of the class 10 mean given the point given the abs,153_Lecture_42___Kmeans_Clustering.wav
+154,for example for this we can use Bayes rule which tells us that this is equal to probability of the mean,154_Lecture_42___Kmeans_Clustering.wav
+155,x,155_Lecture_42___Kmeans_Clustering.wav
+156,bility of point given me,156_Lecture_42___Kmeans_Clustering.wav
+157,X / probability of the,157_Lecture_42___Kmeans_Clustering.wav
+158,and from the data we can find out probability of point given in the em step we find the weight we find that each name the maximum likelihood estimate of the mean is the weighted average of the,158_Lecture_42___Kmeans_Clustering.wav
+159,weighted average of the points belonging to each cluster and what is the weight weight is the probability of the point belonging to the cluster Vivek,159_Lecture_42___Kmeans_Clustering.wav
+160,equal to probability,160_Lecture_42___Kmeans_Clustering.wav
+161,mean give,161_Lecture_42___Kmeans_Clustering.wav
+162,2000,162_Lecture_42___Kmeans_Clustering.wav
+163,for example in this particular case if you look at the slide in the cml initialising ke cluster centres in the east we assign points to clusters probability that excite the point x tribe belongs to the class 10th C K is given by probability of exile given sikhe / summation over Jay Probability excisable and the weight can be computed as summation over I probability excited sikhe by in when is the points belonging to the cluster in the maximization step we estimate the model parameters as our,163_Lecture_42___Kmeans_Clustering.wav
+164,1 by N summation equal to 12 and probability excited nck / Sigma,164_Lecture_42___Kmeans_Clustering.wav
+165,particular instance of the em so as you can see that the k-means algorithm is also an example of the em algorithm but with certain restrictions so that we allow the point belonging to only,165_Lecture_42___Kmeans_Clustering.wav
+166,we represent the data set in terms of ke clusters each of which is summarised by the cluster Centre UK initialised means that iterate between two phases in the came in south-east we assign it a point to the nearest prototype M step we update Prototype 2 the clusters is an example of the year but in general and I am also is more general and we can use model this class 12 with this I stop today's live,166_Lecture_42___Kmeans_Clustering.wav
